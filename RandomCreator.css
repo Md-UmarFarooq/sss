@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    margin: 0vh;
+    padding: 0vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.root{
+  height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.container{
+min-width: 30vw;
+min-height: 80vh;
+background:#333333;
+color: #d1c4e9;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+border: 3px solid #000;
+border-radius: 2vh;
+}
+
+
+
+.text1{
+    font-size: 2rem;
+}
+.text2{
+    font-size: 1.7rem;
+}
+.types-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 1.7rem;
+}
+
+.types-container>div{
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    
+}
+
+.type:hover{
+    cursor: pointer;
+}
+.length-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.length{
+    min-width: 20vw;
+    accent-color: #F96167;
+}
+
+.length:hover{
+    cursor: pointer;
+}
+
+input.type{
+    min-width: 1vw;
+    accent-color: red;
+}
+
+.button{
+    min-width: 10vw;
+    min-height: 3vh;
+    color: #333333;
+    background: #d1c4e9;
+    border-radius: 0.5vh;
+    font-size: 1.3rem;
+}
+
+.button:hover{
+    cursor: pointer;
+    background: #333333;
+    color: #d1c4e9;
+}
+
+.output{
+    background: #000;
+    color: white;
+    overflow-x: scroll;
+    max-width:20vw ;
+}
+
+.output-container{
+    display: flex;
+    gap: 1vh;
+}
+
+.copy{
+    display: none;
+    color: white;
+}
+.copy:hover{
+    cursor: pointer;
+}
+.copy.show{
+    display:block ;
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 1px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 800px; 
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 600px;
+    }
+    .text1 {
+        font-size: 1.8rem;
+    }
+    .text2 {
+        font-size: 1.5rem;
+    }
+    .types-container {
+        font-size: 1.3rem;
+    }
+    .length {
+        max-width: 350px;
+    }
+    .button {
+        max-width: 200px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 90%; 
+        padding: 1rem;
+    }
+    .text1 {
+        font-size: 1.5rem;
+    }
+    .text2 {
+        font-size: 1.2rem;
+    }
+    .types-container {
+        font-size: 1.1rem;
+    }
+    .length {
+        max-width: 300px;
+    }
+    .button {
+        max-width: 180px;
+    }
+    .output {
+        max-height: 80px;
+    }
+}

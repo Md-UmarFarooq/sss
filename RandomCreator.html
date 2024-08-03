@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomCreator</title>
+    <link rel="stylesheet" href="RandomCreator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="root">
+    <div class="container">
+        <div class="text1">RANDOM CREATOR</div>
+        <div class="input-sec1">
+            <div class="types-container">
+            <div>
+             <label for="all">All</label>   
+             <input type="checkbox" name="all" class="type" checked>
+             </div>
+             <div>
+             <label for="numbers">Numbers</label>   
+             <input type="checkbox" name="numbers" class="type">
+             </div>
+             <div>
+             <label for="capital">Capital alphabets</label>   
+             <input type="checkbox" name="capital" class="type">
+             </div>
+             <div>
+             <label for="small">Small alphabets</label>   
+             <input type="checkbox" name="small" class="type">
+             </div>
+             <div>
+             <label for="specialchars">Special characters</label>   
+             <input type="checkbox" name="specialchars" class="type">
+             </div>
+             </div>
+            </div>
+            <div class="input-sec2">
+                <label for="length" class="text2">Length</label>
+        <div class="length-container">
+             <input type="range" name="length" class="length" min="1" max="100">
+             <div class="length-element text2">
+                <div class="length-value text-2"></div>
+             </div>
+            </div>
+        </div>
+        <div>
+            <button class="button">Generate</button>
+        </div>
+        <div class="output-container">
+        <div class="output text1"></div>
+        <div class="copy"><i class="fa-solid fa-copy"></i></div>  
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="RandomCreator.js"></script>
+</html>
